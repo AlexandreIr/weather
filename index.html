@@ -15,27 +15,64 @@
         <button>Buscar</button>
     </form>
 
+    <h2>Informações desejadas</h2>
+    <div class="params">
+        <div class="group allin">
+            <input type="checkbox" id="all">
+            <label for="all">Todas as informações</label>
+        </div>
+
+        <div class="group temp">
+            <input type="checkbox" data-params="temp" id="temp" class="c-group">
+            <label for="temp">Temperatura</label>
+        </div>
+        <div class="group sens">
+            <input type="checkbox" data-params="sens" id="sens" class="c-group">
+            <label for="sens">Sensação termica</label>
+        </div>
+
+        <div class="group velW">
+            <input type="checkbox" data-params="vento" id="vento" class="c-group">
+            <label for="vento">Velocidade do vento</label>
+        </div>
+
+        <div class="group humi">
+            <input type="checkbox" data-params="umidade" id="umidade" class="c-group">
+            <label for="umidade">Umidade</label>
+        </div>
+        
+    </div>
+
     <div class="resultado">
         <div class="titulo">--</div>
 
         <div class="info">
             <div class="temp">
-                <div class="tempTitulo">Temperatura</div>
-                <div class="tempInfo">-- <sup>ºC</sup></div>
-                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="image" />
-                <div class="sensTitulo">Sensação</div>
-                <div class="sensInfo">--</div>
+                <div class="tempDiv result">
+                    <div class="tempTitulo">Temperatura</div>
+                    <div class="tempInfo">-- <sup>ºC</sup></div>
+                    <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="image" />
+                </div>
+                <div class="sensDiv result">
+                    <div class="sensTitulo">Sensação</div>
+                    <div class="sensInfo">--</div>
+                </div>
             </div>
             <div class="vento">
-                <div class="ventoTitulo">Vento</div>
-                <div class="ventoInfo">-- <span>km/h</span></div>
-                <div class="ventoArea">
-                    <div class="ventoPonto" style="transform: rotate(0deg)"></div>
+                <div class="ventoDiv result">
+                    <div class="ventoTitulo">Vento</div>
+                    <div class="ventoInfo">-- <span>km/h</span></div>
+                    <div class="ventoArea">
+                        <div class="ventoPonto" style="transform: rotate(0deg)"></div>
+                    </div>
                 </div>
-                <div class="umidadeTitulo">Umidade</div>
-                <div class="umidadeInfo">--</div>
+                <div class="umidadeDiv result">
+                    <div class="umidadeTitulo">Umidade</div>
+                    <div class="umidadeInfo">--</div>
+                </div>
             </div>
         </div>
+        <button>Mudar parametros</button>
     </div>
 
     <div class="aviso"></div>
